@@ -17,5 +17,3 @@ if ($conn->connect_error) {
     // o sinal de ponto "." é o concatenador do PHP
     die("Falha ao se comunicar com banco de dados: " . $conn->connect_error);
 };
-?>
-php
