@@ -23,6 +23,13 @@ input{
     margin-bottom: 15px;
     padding: 10px;
     border: none;
+    background: #28002c;
+    color: rgb(246, 209, 250);
+    transition: 0.5s;
+}
+
+input:hover{
+    background: #1b001d;
 }
 
 textarea{
@@ -33,6 +40,13 @@ textarea{
     margin-bottom: 15px;
     padding: 10px;
     border: none;
+    background: #3c0340;
+    color: rgb(246, 209, 250);
+    transition: 0.5s;
+}
+
+textarea:hover{
+    background: #2f0332;
 }
 
 label{
@@ -44,4 +58,9 @@ button{
     border: none;
     border-radius: 40px 30px 10px 0px;
     padding: 10px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background: rgb(107, 68, 112);
 }
