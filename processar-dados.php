@@ -35,12 +35,14 @@ $smtp->bind_param("sssss", $nome, $email, $mensagem, $data_atual, $hora_atual);
 // string= s
 
 // Verificação de Envio ao Usuário caso o formulário 
-// foi preenchido com sucesso ou erro
+//foi preenchido com sucesso ou erro
 if ($smtp->execute()) {
     echo "Mensagem enviada com sucesso!";
 } else {
     echo "Erro no envio da mensagem: " . $smtp->error;
 };
 
+// Comando para encerrar a comunicação do php com o banco 
+//e a conexão do servidor local com o banco no MySQL
 $smtp->close();
 $conn->close();
