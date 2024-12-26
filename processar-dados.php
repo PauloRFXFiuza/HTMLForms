@@ -1,4 +1,5 @@
 <?php
+/* <?php - Abre o PHP */
 
 // Coletando os dados provindos do formulário- arquivo htmlForms.html
 $nome = $_POST['nome'];
@@ -45,7 +46,9 @@ if ($smtp->execute()) {
     echo "Erro no envio da mensagem: " . $smtp->error;
 };
 
-// Comando para encerrar a comunicação do php com o banco 
+// Comando para encerrar a comunicação smtp com o banco 
 //e a conexão do servidor local com o banco no MySQL
 $smtp->close();
 $conn->close();
+
+/* ?> - Fecha o PHP */
