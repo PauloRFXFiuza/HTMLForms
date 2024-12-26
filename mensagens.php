@@ -14,6 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($senhaDigitada === $senhaSecreta) {
         $sql = "SELECT * FROM mensagens";
         $result = $conn->query($sql);
+    } else {
+        echo "<h1>Senha Incorreta!</h1>";
     };
 };
 
