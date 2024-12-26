@@ -1,5 +1,5 @@
 <?php
-/* <?php - Abre o PHP */
+/* "<?php - Abre o PHP" */
 
 /*Comando para importar um arquivo php*/
 require_once 'config.php';
