@@ -2,6 +2,13 @@
 
 $senhaSecreta = "123";
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $senhaDigitada = $_POST['senha'];
+
+    if ($senhaDigitada === $senhaSecreta) {
+    }
+};
+
 ?>
 
 <!DOCTYPE html>
