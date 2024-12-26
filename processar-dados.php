@@ -14,6 +14,7 @@ $data_atual = date('d/m/Y'); //Exemplo: 13/08/2024 - 13=d, 08=m, 2024=Y
 date_default_timezone_set('America/Sao_Paulo');
 $hora_atual = date('H:i:s'); //Exemplo: 14:15:52- 14h15min52s - 14=H, 15=i, 52=s
 
+// Preparação de comandos para inserir dados na tabela
 $smtp = $conn->prepare("INSERT INTO mensagens (nome, email, mensagem, data, hora) 
 VALUES (?, ?, ?, ?, ?)");
 // nome=?, email=?, ..., hora=? 
