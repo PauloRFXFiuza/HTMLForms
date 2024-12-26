@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "SELECT * FROM mensagens";
         $result = $conn->query($sql);
     } else {
-        echo "<h1>Senha Incorreta!</h1>";
+        echo "<h1 style='color: rgb(246, 209, 250);'>Senha Incorreta!</h1>";
     };
 };
 
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="resultados">
         <?php if ((isset($result)) && ($result->num_rows > 0)) : ?>
-            <h2>Mensagens</h2>
+            <h2 style="text-align: center;">Mensagens</h2>
             <ul>
                 <?php while ($row = $result->fetch_assoc()) : ?>
                     <li>
