@@ -5,3 +5,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+form{
+    background: #ccc;
+    display: flex;
+    flex-flow: row wrap;
+}
