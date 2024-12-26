@@ -22,6 +22,7 @@ form{
     color: rgb(246, 209, 250);
     display: flex;
     flex-flow: column wrap;
+    margin-top: 20px;
     padding: 40px;
     border-radius: 22px 17px 0 10px;
     box-shadow:2px 2px 20px #57004cab;
