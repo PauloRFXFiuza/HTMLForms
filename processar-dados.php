@@ -35,7 +35,7 @@ VALUES (?, ?, ?, ?, ?)");
 $smtp->bind_param("sssss", $nome, $email, $mensagem, $data_atual, $hora_atual);
 // "sssss" - s refere-se ao tipo do formato do dado, ou seja
 // nome, email, mensagem, data e hora são do tipo string, ou seja
-// string= s
+// string= s, para inteiro, usa-se i=integer
 
 // Verificação de Envio ao Usuário caso o formulário 
 //foi preenchido com sucesso ou erro
