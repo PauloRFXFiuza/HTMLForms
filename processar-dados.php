@@ -39,3 +39,6 @@ if ($smtp->execute()) {
 } else {
     echo "Erro no envio da mensagem: " . $smtp->error;
 };
+
+$smtp->close();
+$conn->close();
