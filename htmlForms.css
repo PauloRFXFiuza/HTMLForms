@@ -8,9 +8,18 @@ body{
 }
 
 form{
-    background: #ccc;
+    background: #67005aab;
     display: flex;
     flex-flow: column wrap;
     padding: 20px;
     border-radius: 15px 0 28px 10px;
+}
+
+input{
+    width: 90%;
+    height: 30px;
+}
+
+label{
+    color: rgb(246, 209, 250);
 }
