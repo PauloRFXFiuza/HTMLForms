@@ -19,4 +19,6 @@ $banco = 'aula_formulario';
 $conn = new mysqli($server, $usuario, $senha, $banco);
 
 if ($conn->connect_error) {
-}
+    // o sinal de ponto "." é o concatenador do PHP
+    die("Falha ao se comunicar com banco de dados: " . $conn->connect_error);
+};
