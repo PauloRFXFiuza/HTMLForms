@@ -5,7 +5,7 @@ $nome = $_POST['nome'];
 $email = $_POST['email'];
 $mensagem = $_POST['mensagem'];
 
-//Conectar com o banco de dados criado no MySQL
+// Configurações de Credenciais
 //servidor
 $server = 'localhost';
 //usuário
@@ -15,4 +15,5 @@ $senha = '';
 //base de dados (banco de dados do MySQL)
 $banco = 'aula_formulario';
 
+//Conectar com o banco de dados criado no MySQL
 $conn = new mysqli($server, $usuario, $senha, $banco);
