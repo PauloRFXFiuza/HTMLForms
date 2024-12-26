@@ -17,3 +17,6 @@ $banco = 'aula_formulario';
 
 //Conectar com o banco de dados criado no MySQL
 $conn = new mysqli($server, $usuario, $senha, $banco);
+
+if ($conn->connect_error) {
+}
