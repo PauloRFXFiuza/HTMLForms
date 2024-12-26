@@ -17,6 +17,16 @@ form{
     box-shadow:2px 2px 20px #57004cab;
 }
 
+.resultados{
+    background: #67005aab;
+    color: rgb(246, 209, 250);
+    display: flex;
+    flex-flow: column wrap;
+    padding: 40px;
+    border-radius: 22px 17px 0 10px;
+    box-shadow:2px 2px 20px #57004cab;
+}
+
 input{
     width: 90%;
     height: 30px;

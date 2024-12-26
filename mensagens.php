@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <button type="submit">Enviar</button>
     </form>
 
-    <div>
+    <div class="resultados">
         <?php if ((isset($result)) && ($result->num_rows > 0)) : ?>
             <h2>Mensagens</h2>
             <ul>
