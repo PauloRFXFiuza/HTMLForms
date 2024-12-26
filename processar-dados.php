@@ -29,4 +29,7 @@ if ($conn->connect_error) {
 $smtp = $conn->prepare("INSERT INTO mensagens (nome, email, mensagem, data, hora) 
 VALUES (?, ?, ?, ?, ?)"); //nome=?, email=?, ..., hora=?
 
-$smtp->bind_param("sssss",)
+$smtp->bind_param("sssss", $nome, $email, $mensagem, $data_atual, $hora_atual); 
+// "sssss" - s refere-se ao tipo do formato do dado, ou seja
+// nome, email, mensagem, data e hora são do tipo string, ou seja
+// string= s
