@@ -11,7 +11,7 @@ form{
     background: #67005aab;
     display: flex;
     flex-flow: column wrap;
-    padding: 20px;
+    padding: 40px;
     border-radius: 15px 0 28px 10px;
 }
 
