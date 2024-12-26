@@ -34,6 +34,8 @@ $smtp->bind_param("sssss", $nome, $email, $mensagem, $data_atual, $hora_atual);
 // nome, email, mensagem, data e hora são do tipo string, ou seja
 // string= s
 
+// Verificação de Envio ao Usuário caso o formulário 
+// foi preenchido com sucesso ou erro
 if ($smtp->execute()) {
     echo "Mensagem enviada com sucesso!";
 } else {
