@@ -18,6 +18,8 @@ form{
 input{
     width: 90%;
     height: 30px;
+    border-radius: 0 10px 12px 22px;
+    margin: 5px;
 }
 
 label{
