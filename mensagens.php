@@ -1,5 +1,8 @@
 <?php
 //Definição da senha para acesso das mensagens- página do ADM
+
+require_once 'config.php';
+
 $senhaSecreta = "123";
 
 //Verifica se foi digitado algo na senha
