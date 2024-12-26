@@ -1,10 +1,13 @@
 <?php
-
+//Definição da senha para acesso das mensagens- página do ADM
 $senhaSecreta = "123";
 
+//Verifica se foi digitado algo na senha
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //Atribui o que foi digitado(conteúdo do input) à variável $senhaDigitada
     $senhaDigitada = $_POST['senha'];
 
+    // Se digitou a senha corretamente 
     if ($senhaDigitada === $senhaSecreta) {
     }
 };
