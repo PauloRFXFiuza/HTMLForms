@@ -10,4 +10,6 @@ form{
     background: #ccc;
     display: flex;
     flex-flow: column wrap;
+    padding: 20px;
+    border-radius: 15px 0 28px 10px;
 }
