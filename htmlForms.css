@@ -9,5 +9,5 @@ body{
 form{
     background: #ccc;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
