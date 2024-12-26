@@ -12,7 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Se digitou a senha corretamente 
     if ($senhaDigitada === $senhaSecreta) {
-    }
+        $sql = "SELECT * FROM mensagens";
+    };
 };
 
 ?>
