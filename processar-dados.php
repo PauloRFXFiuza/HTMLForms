@@ -4,7 +4,8 @@
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $mensagem = $_POST['mensagem'];
-$data_atual = date('d/m/Y');
+$data_atual = date('d/m/Y'); //Exemplo: 13/08/2024 - 13=d, 08=m, 2024=Y
+$hora_atual = date('H:i:s'); //Exemplo: 14:15:52- 14h15min52s - 14=H, 15=i, 52=s
 
 // Configurações de Credenciais
 //servidor
@@ -26,4 +27,6 @@ if ($conn->connect_error) {
 };
 
 $smtp = $conn->prepare("INSERT INTO mensagens (nome, email, mensagem, data, hora) 
-VALUES (?, ?, ?, ?, ?)");
+VALUES (?, ?, ?, ?, ?)"); //nome=?, email=?, ..., hora=?
+
+$smtp->bind_param("sssss",)
