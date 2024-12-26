@@ -4,6 +4,7 @@
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $mensagem = $_POST['mensagem'];
+$data_atual = date('d/m/Y');
 
 // Configurações de Credenciais
 //servidor
