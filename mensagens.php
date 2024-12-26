@@ -38,6 +38,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <button type="submit">Enviar</button>
     </form>
+
+    <?php if((isset($result)) && ($result->num_rows > 0)) : ?>
+        <h2>Mensagens</h2>
+        <ul>
+            <?php while($row = $result->fetch_assoc()) : ?>
+                <li>
+                    <strong>Nome: </strong> <?php echo $row["nome"]; ?><br>
+                    <strong>Email: </strong> <?php echo $row["email"]; ?><br>
+                    <strong>Mensagem: </strong> <?php echo $row["mensagem"]; ?><br>
+                    <strong>Data e Hora: </strong> <?php echo $row["data"]." às ".$row["hora"]; ?><br>
+                </li>
+            <?php endwhile; ?>    
+        </ul>
+    
 </body>
 
 </html>
