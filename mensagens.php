@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <?php endwhile; ?>
             </ul>
         <?php else : ?>
-            <p>Nenhuma mensagem encontrada. </p>
+            <p>Nenhuma mensagem. </p>
         <?php endif; ?>
     </div>
 
