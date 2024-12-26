@@ -1,6 +1,10 @@
 <?php
 /* <?php - Abre o PHP */
 
+/*Comando para importar um arquivo php*/
+require_once 'config.php';
+
+
 // Coletando os dados provindos do formulário- arquivo htmlForms.html
 $nome = $_POST['nome'];
 $email = $_POST['email'];
