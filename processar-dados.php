@@ -53,4 +53,6 @@ if ($smtp->execute()) {
 $smtp->close();
 $conn->close();
 
-/* ?> - Fecha o PHP */
+?>
+
+?> - Fecha o PHP
